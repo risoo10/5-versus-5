@@ -1,0 +1,23 @@
+<div class="content">
+  <div class="logo">
+    <img src="../../../assets/imgs/logo.png" alt="Logo" />
+  </div>
+  <div class="overlay-wrapper">
+    <div class="row teams">
+      <div class="border-container">
+        <h4>Tim A</h4>
+      </div>
+      <span><h4>VS</h4></span>
+      <div class="border-container">
+        <h4>Tim B</h4>
+      </div>
+    </div>
+    <h4 class="section-heading">Otázky:</h4>
+    <div class="row questions">
+      <div class="question-list">
+        <div class="question-circle" *ngFor="let question of [1, 2, 3, 4, 5, 6]">{{ question }}.</div>
+      </div>
+      <button>Začať!</button>
+    </div>
+  </div>
+</div>

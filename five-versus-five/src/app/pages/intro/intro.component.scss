@@ -1,0 +1,79 @@
+@import '../../../assets/variables';
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.8rem;
+}
+
+.logo {
+  margin-top: 2rem;
+
+  img {
+    width: 800px;
+    height: auto;
+  }
+}
+
+.overlay-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, rgba($dark-color, 0), rgba($dark-color, 0.5) 25%);
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.teams {
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+  > div,
+  > span {
+    margin-right: 2rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  h4 {
+    margin: 0;
+    color: $white-color;
+  }
+}
+
+.row.questions {
+  justify-content: space-between;
+  width: 60%;
+}
+
+$circle-size: 60px;
+.question-list {
+  display: flex;
+  .question-circle {
+    display: flex;
+    width: $circle-size;
+    height: $circle-size;
+    justify-content: center;
+    align-items: center;
+    border-radius: 120px;
+    background-color: $brand-sun-color;
+    color: $dark-color;
+    font-weight: bold;
+    margin-right: 0.5rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+h4.section-heading {
+  color: $white-color;
+  text-align: left;
+  width: 60%;
+}

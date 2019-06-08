@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~material-design-icons/iconfont/material-icons.css';
+@import 'assets/variables';
+
+@font-face {
+  font-family: Montserrat;
+  src: url(assets/fonts/Montserrat/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(assets/fonts/Montserrat/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+html {
+  background: url('assets/imgs/background.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+
+  font-family: Montserrat;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+div.border-container {
+  min-width: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border: 4px solid $brand-sun-color;
+}
+
+button {
+  background-color: $brand-sun-color;
+  color: $dark-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1rem 1.3rem;
+  outline: none !important;
+  border: none !important;
+
+  &:hover {
+    background-color: lighten($brand-sun-color, 3%);
+    cursor: pointer;
+  }
+}
