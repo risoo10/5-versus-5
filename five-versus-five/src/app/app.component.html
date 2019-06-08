@@ -1,4 +1,8 @@
 <div class="wrapper">
-  <div class="menu"></div>
+  <div class="menu">
+    <button [routerLink]="['/intro']" mat-icon-button><mat-icon>home</mat-icon></button>
+    <button [routerLink]="['/question']" mat-icon-button><mat-icon>question_answer</mat-icon></button>
+    <button [routerLink]="['/dashboard']" mat-icon-button><mat-icon>edit</mat-icon></button>
+  </div>
   <router-outlet></router-outlet>
 </div>

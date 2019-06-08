@@ -17,7 +17,7 @@
       <div class="question-list">
         <div class="question-circle" *ngFor="let question of [1, 2, 3, 4, 5, 6]">{{ question }}.</div>
       </div>
-      <button>Začať!</button>
+      <button [routerLink]="['/question']">Začať!</button>
     </div>
   </div>
 </div>

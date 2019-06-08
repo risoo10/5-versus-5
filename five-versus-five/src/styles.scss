@@ -42,6 +42,12 @@ div.border-container {
   align-items: center;
   padding: 1rem 1.5rem;
   border: 4px solid $brand-sun-color;
+  color: $white-color;
+
+  &.filled {
+    background-color: $brand-sun-color;
+    color: $dark-color;
+  }
 }
 
 button {
@@ -49,7 +55,7 @@ button {
   color: $dark-color;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 1rem 1.3rem;
+  padding: 1rem 1.7rem;
   outline: none !important;
   border: none !important;
 
@@ -57,4 +63,15 @@ button {
     background-color: lighten($brand-sun-color, 3%);
     cursor: pointer;
   }
+}
+
+hr {
+  border: none;
+  border-bottom: 3px solid rgba($dark-color, 0.4);
+  margin: 0;
+}
+
+.separator {
+  border-left: 2px solid rgba($dark-color, 0.2);
+  height: 25px;
 }

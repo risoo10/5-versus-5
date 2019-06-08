@@ -1,3 +1,51 @@
-<p>
-  question works!
-</p>
+<div class="content">
+  <div class="question-wrapper">
+    <h4 class="section-heading">Otázka:</h4>
+    <div class="question-text">
+      Koľko
+    </div>
+    <hr />
+    <div class="answers">
+      <ng-container *ngFor="let answer of [1, 2, 3, 4, 5]">
+        <div class="answer" [class.completed]="answer === 2">
+          <div class="answer-text">{{ answer }}.</div>
+          <div class="separator"></div>
+          <div class="answer-points">45</div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <div class="score">
+    <div class="team">
+      <div class="border-container filled">
+        <div class="points">456</div>
+        <div class="separator"></div>
+        <div class="errors">
+          <span class="default">X</span>
+          <span class="default">X</span>
+          <span class="default">X</span>
+        </div>
+      </div>
+      <div class="border-container">
+        TIM A
+      </div>
+    </div>
+    <div class="logo">
+      <img src="../../../assets/imgs/logo.png" alt="Logo" />
+    </div>
+    <div class="team">
+      <div class="border-container filled">
+        <div class="points">456</div>
+        <div class="separator"></div>
+        <div class="errors">
+          <span>X</span>
+          <span class="default">X</span>
+          <span class="default">X</span>
+        </div>
+      </div>
+      <div class="border-container">
+        TIM B
+      </div>
+    </div>
+  </div>
+</div>
